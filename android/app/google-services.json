@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "741625459886",
+    "project_id": "voidplayer-2f431",
+    "storage_bucket": "voidplayer-2f431.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741625459886:android:fc7c24e22ce699f0fb293f",
+        "android_client_info": {
+          "package_name": "com.example.musicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741625459886-e84pqougp642paupac97ltsgp678kqsc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.musicapp",
+            "certificate_hash": "5c7c59246797f2c02ca7979a8da95b9fa78b5984"
+          }
+        },
+        {
+          "client_id": "741625459886-jijuv1e9g4o6b32o8mu0m7f2apkrtkju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcGHGBIGl8HJLWLsBhub-o1wy7bbxATpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741625459886-jijuv1e9g4o6b32o8mu0m7f2apkrtkju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
