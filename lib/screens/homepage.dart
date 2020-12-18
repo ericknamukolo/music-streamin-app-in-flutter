@@ -10,6 +10,7 @@ import 'package:musicapp/screens/indie_page.dart';
 import 'package:musicapp/screens/r&b_page.dart';
 import 'package:musicapp/utils/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 //imports for the random page services
 import 'package:musicapp/utils/random_page_services.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -23,6 +24,26 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final _auth = FirebaseAuth.instance;
+  User loggedInUser;
+
+  @override
+  void initState() {
+    super.initState();
+    getCurrentUser();
+  }
+
+  void getCurrentUser() {
+    try {
+      final user = _auth.currentUser;
+      if (user != null) {
+        loggedInUser = user;
+      }
+    } catch (e) {
+      print(e);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -45,6 +66,21 @@ class _HomePageState extends State<HomePage> {
                       child: Image.asset(
                         'images/logo.png',
                       ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      'Hello ,',
+                      style: kButtonTextStyle,
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      loggedInUser.email,
+                      textAlign: TextAlign.center,
+                      style: kButtonTextStyle,
                     ),
                     SizedBox(
                       height: 20,

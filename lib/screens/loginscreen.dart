@@ -54,7 +54,7 @@ class _LogInScreenState extends State<LogInScreen> {
                     ),
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 9,
                   ),
                   //second one
                   TextField(
@@ -143,28 +143,6 @@ class BottomButton extends StatelessWidget {
               ),
             ),
           ],
-        ),
-      ),
-    );
-  }
-}
-
-class InputTextField extends StatelessWidget {
-  InputTextField({this.icon, this.hint});
-  final IconData icon;
-  final String hint;
-  @override
-  Widget build(BuildContext context) {
-    return TextField(
-      style: kButtonTextStyle.copyWith(fontSize: 20),
-      decoration: InputDecoration(
-        hintText: hint,
-        hintStyle: kButtonTextStyle.copyWith(
-          color: Colors.grey,
-        ),
-        icon: Icon(
-          icon,
-          color: Colors.white,
         ),
       ),
     );
