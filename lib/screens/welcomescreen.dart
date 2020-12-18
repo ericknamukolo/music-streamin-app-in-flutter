@@ -29,10 +29,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               Text(''),
               Column(
                 children: [
-                  Icon(
-                    FontAwesomeIcons.itunesNote,
-                    color: Colors.white,
-                    size: 90,
+                  Hero(
+                    tag: 'logo',
+                    child: Icon(
+                      FontAwesomeIcons.itunesNote,
+                      color: Colors.white,
+                      size: 90,
+                    ),
                   ),
                   SizedBox(
                     height: 50,

@@ -21,6 +21,14 @@ class _LogInScreenState extends State<LogInScreen> {
               //TWO TEXT WIDGETS
               Column(
                 children: [
+                  Hero(
+                    tag: 'logo',
+                    child: Icon(
+                      FontAwesomeIcons.itunesNote,
+                      color: Colors.white,
+                      size: 90,
+                    ),
+                  ),
                   Text(
                     'Log In',
                     style: TextStyle(

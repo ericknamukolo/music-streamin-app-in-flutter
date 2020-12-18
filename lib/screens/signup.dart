@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:musicapp/components/input_text_field.dart';
 import 'package:musicapp/screens/homepage.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SignUpScreen extends StatefulWidget {
   @override
@@ -26,6 +27,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              Hero(
+                tag: 'logo',
+                child: Icon(
+                  FontAwesomeIcons.itunesNote,
+                  color: Colors.white,
+                  size: 90,
+                ),
+              ),
               //TWO TEXT WIDGETS
               Column(
                 children: [
